@@ -2,26 +2,42 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
-        <h1 id="heading1"></h1>
-        <p id="paragrapgh1"></p>
-        <p id="paragrapgh2"></p>
+<body>
+       <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="inputBox" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td class="digitButton" onclick="digitBtnPressed(7)">7</td>
+            <td class="digitButton"  onclick="digitBtnPressed(8)">8</td>
+            <td class="digitButton"  onclick="digitBtnPressed(9)">9</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('*')">*</td>
+        </tr>
+        <tr>
+            <td class="digitButton" onclick="digitBtnPressed(4)">4</td>
+            <td class="digitButton" onclick="digitBtnPressed(5)">5</td>
+            <td class="digitButton" onclick="digitBtnPressed(6)">6</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
+        </tr>
+        <tr>
+            <td class="digitButton" onclick="digitBtnPressed(1)">1</td>
+            <td class="digitButton" onclick="digitBtnPressed(2)">2</td>
+            <td class="digitButton" onclick="digitBtnPressed(3)">3</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="digitBtnPressed(0)">0</td>
 
-        <script>
-            var text1; 
-            var text2; 
-            var text3;
-
-            var numA = 7;
-            var numB = 10;
-
-            text1 = "Hello everyone";
-            text2 = "I love JavaScript";
-            text3 = " JS is good for learning"
-
-            document.getElementById("heading1") .innerHTML = (text1);
-            document.getElementById("paragrapgh1") .innerHTML = (text2 + text3);
-            document.getElementById("paragrapgh2") .innerHTML = (numA + numB);
-        </script>
+            <td class="ACButton" onclick="btnACPressed()">AC</td>
+            <td class="operatorButton" onclick="operatorBtnPressed('/')">/</td>
+        </tr>
+        <tr>
+            <td class="operatorButton" colspan="4" onclick="equalsBtnPressed()">=</td>
+        </tr>
+       </table>
+   
+             </script>
     </body>
 </html>

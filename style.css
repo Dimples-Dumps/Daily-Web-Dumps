@@ -1,37 +1,37 @@
-<body>
-       <table border="1">
-        <tr>
-            <td colspan="4">
-                <input type="text" id="inputBox" value="0">
-            </td>
-        </tr>
-        <tr>
-            <td class="digitButton" onclick="digitBtnPressed(7)">7</td>
-            <td class="digitButton"  onclick="digitBtnPressed(8)">8</td>
-            <td class="digitButton"  onclick="digitBtnPressed(9)">9</td>
-            <td class="operatorButton" onclick="operatorBtnPressed('*')">*</td>
-        </tr>
-        <tr>
-            <td class="digitButton" onclick="digitBtnPressed(4)">4</td>
-            <td class="digitButton" onclick="digitBtnPressed(5)">5</td>
-            <td class="digitButton" onclick="digitBtnPressed(6)">6</td>
-            <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
-        </tr>
-        <tr>
-            <td class="digitButton" onclick="digitBtnPressed(1)">1</td>
-            <td class="digitButton" onclick="digitBtnPressed(2)">2</td>
-            <td class="digitButton" onclick="digitBtnPressed(3)">3</td>
-            <td class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
-        </tr>
-        <tr>
-            <td colspan="2" onclick="digitBtnPressed(0)">0</td>
+table{
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  font: normal, 3em Arial, Helvetica, sans-serif;
+}
 
-            <td class="digitButton" onclick="btnACPressed()">AC</td>
-            <td class="operatorButton" onclick="operatorBtnPressed('/')">/</td>
-        </tr>
-        <tr>
-            <td class="operatorButton" colspan="4" onclick="equalsBtnPressed()">=</td>
-        </tr>
-       </table>
-   
-       
+tr{
+    height: 16.02vh;
+    background-color: #4e494d;
+}
+
+td{
+    width: 25vw;
+    border: 1px solid #4e494d;
+}
+
+#inputBox{
+    background-color: #4e494d;
+    text-align: right;
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
+    border: 0px
+}
+
+.digitButton{
+    background-color: #807e80;
+}
+
+.operatorButton{
+    background-color: #ff9e06;
+}
+
+.ACButton{
+    background-color: #656165;
+}
